@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Displaying found eBay data.</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+
+	<body>
+
+		<div>
+			<!--information about the page-->
+			<p>eBay Data</p>
+			<p>by Nima Rahmanian</p>
+		</div>
+
+		<div class="dropdown">
+		  <button onclick="toggleFunc('categoryDropDown')" class="dropbtn" id = "categoryButton">Select Category</button>
+		  <div id="categoryDropDown" class="dropdown-content">
+		    <button onclick = "updateMenu('categoryButton', 'Calculator')" id = "dropOption">Calculator</button>
+		    <button onclick = "updateMenu('categoryButton', 'Samsung Galaxy')" id = "dropOption">Samsung Galaxy</button>
+		    <button onclick = "updateMenu('categoryButton', 'Samsung Note')" id = "dropOption">Samsung Note</button>
+		    <button onclick = "updateMenu('categoryButton', 'iPhone')" id = "dropOption">iPhone</button>
+		    <button onclick = "updateMenu('categoryButton', 'Book')" id = "dropOption">Book</button>
+		  </div>
+		</div>
+
+		<div class="dropdown">
+		  <button onclick="toggleFunc('categoryDependent')" class="dropbtn" id = "itemButton">Select Item</button>
+		  <div class="dropdown-content" id = "categoryDependent">
+		  	<!--there will be buttons placed here by updateMenu-->
+		  </div>
+		</div>
+
+		<button onclick = "accessPhotos()">Show</button>
+
+		<div id = "photos">
+			
+		</div>
+
+
+		<script src="script.js"></script>
+	</body>
+
+</html>
