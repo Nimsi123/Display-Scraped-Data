@@ -119,8 +119,8 @@ function accessPhotos(){
   alert(volumeDirectory);
   
   //force the directories for testing
-  avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png";
-  volumeDirectory = "./PNG/ti-83_plus_calculator_volume.png";
+  //avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png";
+  //volumeDirectory = "./PNG/ti-83_plus_calculator_volume.png";
 
 
 
