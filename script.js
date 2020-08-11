@@ -93,21 +93,34 @@ function displayItems(itemList){
 
 }
 
+function replace(entry){
+  while (true){
+    newEntry = entry.replace(" ", "_");
+    if (newEntry == entry){
+      break;
+    }
+    else{
+      entry = newEntry;
+      continue;
+    }
+  }
+  return entry;
+}
 
 
 function accessPhotos(){
   //make the directory to the graphs
   var directory = "./PNG/";
-  var itemName = document.getElementById("itemButton").innerHTML.replace(" ", "_");
+  var itemName = replace(document.getElementById("itemButton").innerHTML);
 
-  avgPriceDirectory = directory + itemName + "_avgPrice.png"
-  volumeDirectory = directory + itemName + "_volume.png"
-  alert(avgPriceDirectory)
-  alert(volumeDirectory)
+  avgPriceDirectory = directory + itemName + "_avgPrice.png";
+  volumeDirectory = directory + itemName + "_volume.png";
+  alert(avgPriceDirectory);
+  alert(volumeDirectory);
   
   //force the directories for testing
-  //avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png"
-  //volumeDirectory = "./PNG/ti-83_plus_calculator_volume.png"
+  avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png";
+  volumeDirectory = "./PNG/ti-83_plus_calculator_volume.png";
 
 
 
