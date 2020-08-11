@@ -102,8 +102,8 @@ function accessPhotos(){
 
   avgPriceDirectory = directory + itemName + "_avgPrice.png"
   volumeDirectory = directory + itemName + "_volume.png"
-  //alert(avgPriceDirectory)
-  //alert(volumeDirectory)
+  alert(avgPriceDirectory)
+  alert(volumeDirectory)
   
   //force the directories for testing
   //avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png"
