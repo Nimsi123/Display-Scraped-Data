@@ -41,7 +41,7 @@ function updateMenu(ID, titulo){
   else if (titulo == "Apple Watch"){
     list = ["Apple Watch Series 1", "Apple Watch Series 3", "Apple Watch Series 4", "Apple Watch Series 5"];
   }
-  else if (titulo == "Airpods"){
+  else if (titulo == "AirPods"){
     list = ["Apple Airpods 1st Generation", "Apple Airpods 2nd Generation", "Apple Airpods Pro"];
   }
   else if (titulo == "GoPro"){
