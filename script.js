@@ -113,16 +113,9 @@ function accessPhotos(){
   var directory = "./PNG/";
   var itemName = replace(document.getElementById("itemButton").innerHTML);
 
+  /*
   avgPriceDirectory = directory + itemName + "_avgPrice.png";
   volumeDirectory = directory + itemName + "_volume.png";
-  //alert(avgPriceDirectory);
-  //alert(volumeDirectory);
-  
-  //force the directories for testing
-  //avgPriceDirectory = "./PNG/ti-83_plus_calculator_avgPrice.png";
-  //volumeDirectory = "./PNG/ti-83_plus_calculator_volume.png";
-
-
 
   //after finding the photo's by their directory, make <img> elements and place them in the HTML to be viewed
   document.getElementById("photos").innerHTML = "";
@@ -134,15 +127,14 @@ function accessPhotos(){
   var para = document.createElement("img");
   para.src = volumeDirectory;
   document.getElementById("photos").appendChild(para);
-
-  /*
-  if (outer == "Calculator" || outer == "Samsung Galaxy" || outer == "Samsung Note" || outer == "iPhone"){
-    directory = "C:\\Users\\nimar\\AppData\\Local\\Programs\\Python\\Python37\\Ebay\\Device_Scraping\\PNG_Devices\\";
-    //alert("devices");
-  }
-  else{
-    directory = "C:\\Users\\nimar\\AppData\\Local\\Programs\\Python\\Python37\\Ebay\\Book_Scraping\\PNG_Books\\";
-    //alert("books");
-  }
   */
+
+  directory = directory + itemName + "_combo.png";
+
+  document.getElementById("photos").innerHTML = "";
+
+  var para = document.createElement("img");
+  para.src = directory;
+  document.getElementById("photos").appendChild(para);
+
 }
